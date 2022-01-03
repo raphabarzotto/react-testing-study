@@ -11,7 +11,8 @@ describe('Testa o componente About', () => {
       level: 2,
       name: 'About Pokédex',
     };
-    expect(screen.getByRole('heading', typeH2)).toBeInTheDocument();
+    const headingH2 = screen.getByRole('heading', typeH2);
+    expect(headingH2).toBeInTheDocument();
   });
 
   // A página contém dois parágrafos com texto sobre a Pokédex.
