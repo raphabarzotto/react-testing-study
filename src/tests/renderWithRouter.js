@@ -1,3 +1,4 @@
+// renderWithRouter baseado no exemplo dado em aula
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Router } from 'react-router';
