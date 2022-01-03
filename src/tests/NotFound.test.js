@@ -18,7 +18,7 @@ describe('Testa o componente NotFound', () => {
   });
 
   // A página mostra a imagem https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif.
-  it('a página contém uma imagem', () => {
+  it('A página contém uma imagem', () => {
     renderWithRouter(<NotFound />);
     const image = screen.getByRole('img', {
       name: /pikachu crying because the page requested was not found/i,
