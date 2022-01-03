@@ -55,8 +55,7 @@ describe('Testa o componente Pokedex', () => {
     expect(allButton).toBeInTheDocument();
     const filterButtons = screen.getAllByTestId('pokemon-type-button');
     userEvent.click(filterButtons[1]);
-    const pokemonFireFilter = screen.getByTestId(pokemonName).textContent;
-    expect(pokemonFireFilter).toBe('Charmander');
+    expect(screen.getByTestId(pokemonName).textContent).toBe('Charmander');
     userEvent.click(allButton);
     expect(screen.getByTestId(pokemonName).textContent).toBe('Pikachu');
   });
